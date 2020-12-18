@@ -11,6 +11,8 @@
         - htop
         - git
         - build-essential
+        - python3-psutil
+        - docker.io
 
   - name: install snaps
     snap:
@@ -18,3 +20,38 @@
         - chromium
         - code
         - bashtop
+
+  - name: add user to docker group
+    user:
+      name: lab
+      groups: docker
+
+  - name: set desktop background primary-color
+    become_user: lab
+    dconf:
+      key: "/org/gnome/desktop/background/primary-color"
+      value: "'#000000'"
+
+  - name: set desktop background secondary-color
+    become_user: lab
+    dconf:
+      key: "/org/gnome/desktop/background/secondary-color"
+      value: "'#000000'"
+
+  - name: set desktop background color-shading-type
+    become_user: lab
+    dconf:
+      key: "/org/gnome/desktop/background/color-shading-type"
+      value: "'#000000'"
+
+  - name: set desktop background picture-options
+    become_user: lab
+    dconf:
+      key: "/org/gnome/desktop/background/picture-options"
+      value: "'none'"
+
+  - name: set desktop background picture-uri
+    become_user: lab
+    dconf:
+      key: "/org/gnome/desktop/background/picture-uri"
+      value: "''"
