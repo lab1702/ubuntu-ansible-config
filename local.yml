@@ -4,6 +4,17 @@
   become: true
 
   tasks:
-  - name: install htop
+  - name: install packages
     package:
-      name: htop
+      name:
+        - ubuntu-restricted-extras
+        - htop
+        - git
+        - build-essential
+
+  - name: install snaps
+    snap:
+      name:
+        - chromium
+        - code
+        - bashtop
