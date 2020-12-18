@@ -13,7 +13,6 @@
         - emacs
         - vim
         - steam
-        - htop
 
   - name: install snaps
     snap:
