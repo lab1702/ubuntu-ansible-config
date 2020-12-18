@@ -7,22 +7,28 @@
   - name: install packages
     package:
       name:
-        - ubuntu-restricted-extras
+        - python3-psutil
         - build-essential
-        - emacs
         - git
         - docker.io
+        - emacs
+        - vim
         - htop
-        - python3-psutil
-        - graphviz
+        - steam
 
   - name: install snaps
     snap:
       name:
         - chromium
-        - zoom-client
         - code
+        - zoom-client
         - bashtop
+
+  - name: add user to docker group
+    user:
+      name: lab
+      groups: docker
+      append: yes
 
   - name: set desktop background primary-color
     become_user: lab
