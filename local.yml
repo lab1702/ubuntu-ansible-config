@@ -12,12 +12,15 @@
         - docker.io
         - emacs
         - vim
+        - steam
+        - htop
 
   - name: install snaps
     snap:
       name:
         - chromium
         - zoom-client
+        - bashtop
 
   - name: add user to docker group
     user:
