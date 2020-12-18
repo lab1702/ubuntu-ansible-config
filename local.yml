@@ -9,20 +9,15 @@
       name:
         - python3-psutil
         - build-essential
-        - git
         - docker.io
         - emacs
         - vim
-        - htop
-        - steam
 
   - name: install snaps
     snap:
       name:
         - chromium
-        - code
         - zoom-client
-        - bashtop
 
   - name: add user to docker group
     user:
