@@ -8,23 +8,21 @@
     package:
       name:
         - ubuntu-restricted-extras
-        - htop
-        - git
         - build-essential
-        - python3-psutil
+        - emacs
+        - git
         - docker.io
+        - htop
+        - python3-psutil
+        - graphviz
 
   - name: install snaps
     snap:
       name:
         - chromium
+        - zoom-client
         - code
         - bashtop
-
-  - name: add user to docker group
-    user:
-      name: lab
-      groups: docker
 
   - name: set desktop background primary-color
     become_user: lab
