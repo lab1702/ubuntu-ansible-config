@@ -21,11 +21,26 @@
         - zoom-client
         - bashtop
 
+  - name: install megasync
+    apt: deb=https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/megasync-xUbuntu_20.04_amd64.deb state=present update_cache=true
+
+  - name: remove unused packages
+    apt: autoremove=true
+
+  - name: clean apt cache
+    apt: autoclean=true
+
   - name: add user to docker group
     user:
       name: lab
       groups: docker
       append: yes
+
+  - name: set desktop dark mode
+    become_user: lab
+    dconf:
+      key: "/org/gnome/desktop/interface/gtk-theme"
+      value: "'Yaru-dark'"
 
   - name: set desktop background primary-color
     become_user: lab
