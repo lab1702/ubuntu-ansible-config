@@ -23,6 +23,11 @@
         - zoom-client
         - bashtop
 
+  - name: install snaps-classic
+    snap:
+      name: code
+      classic: yes
+
   - name: install megasync
     apt: deb=https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/megasync-xUbuntu_20.04_amd64.deb state=present update_cache=true
 
