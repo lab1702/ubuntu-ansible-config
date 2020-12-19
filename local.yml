@@ -32,10 +32,12 @@
         - gnome-tweaks
         - build-essential
         - docker.io
+        - htop
         - emacs
         - vim
         - steam
         - megasync
+        - graphviz
         - r-base
         - r-base-dev
         - ess
