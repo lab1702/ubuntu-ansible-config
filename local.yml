@@ -9,7 +9,7 @@
       name:
         - python3-psutil
         - gnome-shell-extensions
-        - gnome-tweak
+        - gnome-tweaks
         - build-essential
         - docker.io
         - emacs
