@@ -32,6 +32,7 @@
         - graphviz-doc
         - texlive-full
         - lyx
+        - texstudio
 
   - name: install snaps
     snap:
