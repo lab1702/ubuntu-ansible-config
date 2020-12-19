@@ -18,13 +18,9 @@
         - build-essential
         - docker.io
         - emacs
-        - ess
         - vim
-        - jupyter
         - steam
         - megasync
-        - r-base
-        - r-base-dev
 
   - name: install snaps
     snap:
