@@ -19,13 +19,14 @@
     apt_repository:
       repo: deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/
       state: present
-      validate_certs: no
       update_cache: true
 
   - name: install packages
     package:
       name:
         - python3-psutil
+        - python3-pip
+        - python3-venv
         - gnome-shell-extensions
         - gnome-tweaks
         - build-essential
@@ -34,6 +35,11 @@
         - vim
         - steam
         - megasync
+        - r-base
+        - r-base-dev
+        - ess
+        - jupyter
+        - texlive-full
 
   - name: install snaps
     snap:
