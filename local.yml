@@ -12,8 +12,9 @@
 
   - name: add R repository
     apt_repository:
-      repo: deb https://cloud.r-project.org/bin/linux/ubuntu/ focal-cran40/
+      repo: deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/
       state: present
+      validate_certs: no
       update_cache: true
 
   - name: install packages
