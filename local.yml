@@ -53,102 +53,102 @@
 
   - name: add user to docker group
     user:
-      name: {{ host_user }}
+      name: "{{ host_user }}"
       groups: docker
       append: yes
 
   - name: set night-light-enabled
-    become_user: {{ host_user }}
+    become_user: "{{ host_user }}"
     dconf:
       key: "/org/gnome/settings-daemon/plugins/color/night-light-enabled"
       value: "true"
 
   - name: disable screen locking
-    become_user: {{ host_user }}
+    become_user: "{{ host_user }}"
     dconf:
       key: "/org/gnome/desktop/screensaver/lock-enabled"
       value: "false"
 
   - name: hide home folder on desktop
-    become_user: {{ host_user }}
+    become_user: "{{ host_user }}"
     dconf:
       key: "/org/gnome/shell/extensions/desktop-icons/show-home"
       value: "false"
 
   - name: hide trash on desktop
-    become_user: {{ host_user }}
+    become_user: "{{ host_user }}"
     dconf:
       key: "/org/gnome/shell/extensions/desktop-icons/show-trash"
       value: "false"
 
   - name: show trash in dock
-    become_user: {{ host_user }}
+    become_user: "{{ host_user }}"
     dconf:
       key: "/org/gnome/shell/extensions/dash-to-dock/show-trash"
       value: "true"
 
   - name: set desktop clock-format
-    become_user: {{ host_user }}
+    become_user: "{{ host_user }}"
     dconf:
       key: "/org/gnome/desktop/interface/clock-format"
       value: "'12h'"
 
   - name: set desktop clock-show-seconds
-    become_user: {{ host_user }}
+    become_user: "{{ host_user }}"
     dconf:
       key: "/org/gnome/desktop/interface/clock-show-seconds"
       value: "true"
 
   - name: set 12 hour clock show-date
-    become_user: {{ host_user }}
+    become_user: "{{ host_user }}"
     dconf:
       key: "/org/gnome/desktop/interface/clock-show-date"
       value: "true"
 
   - name: set 12 hour clock show-weekday
-    become_user: {{ host_user }}
+    become_user: "{{ host_user }}"
     dconf:
       key: "/org/gnome/desktop/interface/clock-show-weekday"
       value: "true"
 
   - name: set applications dark mode
-    become_user: {{ host_user }}
+    become_user: "{{ host_user }}"
     dconf:
       key: "/org/gnome/desktop/interface/gtk-theme"
       value: "'Yaru-dark'"
 
   - name: set gnome shell dark mode
-    become_user: {{ host_user }}
+    become_user: "{{ host_user }}"
     dconf:
       key: "/org/gnome/shell/extensions/user-theme/name"
       value: "'Yaru-dark'"
 
   - name: set desktop background primary-color
-    become_user: {{ host_user }}
+    become_user: "{{ host_user }}"
     dconf:
       key: "/org/gnome/desktop/background/primary-color"
       value: "'black'"
 
   - name: set desktop background secondary-color
-    become_user: {{ host_user }}
+    become_user: "{{ host_user }}"
     dconf:
       key: "/org/gnome/desktop/background/secondary-color"
       value: "'black'"
 
   - name: set desktop background color-shading-type
-    become_user: {{ host_user }}
+    become_user: "{{ host_user }}"
     dconf:
       key: "/org/gnome/desktop/background/color-shading-type"
       value: "'solid'"
 
   - name: set desktop background picture-options
-    become_user: {{ host_user }}
+    become_user: "{{ host_user }}"
     dconf:
       key: "/org/gnome/desktop/background/picture-options"
       value: "'none'"
 
   - name: set desktop background picture-uri
-    become_user: {{ host_user }}
+    become_user: "{{ host_user }}"
     dconf:
       key: "/org/gnome/desktop/background/picture-uri"
       value: "''"
