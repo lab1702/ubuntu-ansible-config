@@ -30,6 +30,7 @@
         - megasync
         - r-base
         - r-base-dev
+      state: present
 
   - name: install snaps
     snap:
@@ -37,11 +38,13 @@
         - chromium
         - zoom-client
         - bashtop
+      state: present
 
   - name: install vscode
     snap:
       name: code
       classic: yes
+      state: present
 
   - name: add user to docker group
     user:
