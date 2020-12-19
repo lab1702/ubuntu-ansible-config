@@ -5,8 +5,9 @@
 
   tasks:
   - name: add megasync repo
-    apt_repository: "deb https://mega.nz/linux/MEGAsync/xUbuntu_20.04/ ./"
-    state: present
+    apt_repository:
+      repo: deb https://mega.nz/linux/MEGAsync/xUbuntu_20.04/ ./
+      state: present
 
   - name: install packages
     package:
