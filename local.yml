@@ -4,9 +4,14 @@
   become: true
 
   tasks:
+  - name: add megasync key
+    apt_key:
+      url: https://mega.nz/linux/MEGAsync/xUbuntu_20.04/Release.key
+      state: present
+
   - name: add megasync repository
     apt_repository:
-      repo: deb https://mega.nz/linux/MEGAsync/xUbuntu_20.04 ./
+      repo: deb https://mega.nz/linux/MEGAsync/xUbuntu_20.04/ ./
       state: present
       update_cache: true
 
