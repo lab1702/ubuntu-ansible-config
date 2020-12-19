@@ -43,7 +43,6 @@
   - name: install snaps
     snap:
       name:
-        - chromium
         - zoom-client
         - bashtop
 
