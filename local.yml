@@ -6,7 +6,7 @@
   tasks:
   - name: add megasync repository
     apt_repository:
-      repo: deb https://mega.nz/linux/MEGAsync/xUbuntu_20.04/ ./
+      repo: deb https://mega.nz/linux/MEGAsync/xUbuntu_20.04 ./
       state: present
       update_cache: true
 
