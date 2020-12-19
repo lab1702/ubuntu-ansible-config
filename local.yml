@@ -10,24 +10,10 @@
       state: present
       update_cache: true
 
-  - name: add R repository key
-    apt_key:
-      keyserver: keyserver.ubuntu.com
-      id: E298A3A825C0D65DFD57CBB651716619E084DAB9
-      state: present
-
-  - name: add R repository
-    apt_repository:
-      repo: deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/
-      state: present
-      update_cache: true
-
   - name: install packages
     package:
       name:
         - python3-psutil
-        - python3-pip
-        - python3-venv
         - gnome-shell-extensions
         - gnome-tweaks
         - build-essential
@@ -38,11 +24,9 @@
         - steam
         - megasync
         - graphviz
-        - r-base
-        - r-base-dev
-        - ess
-        - jupyter
+        - graphviz-doc
         - texlive-full
+        - lyx
 
   - name: install snaps
     snap:
