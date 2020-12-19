@@ -63,6 +63,12 @@
       key: "/org/gnome/settings-daemon/plugins/color/night-light-enabled"
       value: "true"
 
+  - name: disable screen locking
+    become_user: lab
+    dconf:
+      key: "/org/gnome/desktop/screensaver/lock-enabled"
+      value: "false"
+
   - name: set desktop clock-format
     become_user: lab
     dconf:
