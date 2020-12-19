@@ -1,6 +1,8 @@
 # ubuntu-ansible-config
 
-My ansible configuration files for Ubuntu systems. It basically installs some packages I always want ready to go, and sets a more complete dark mode.
+My ansible configuration files for Ubuntu systems.
+
+It basically installs some packages I always want ready to go, and sets a more complete dark mode.
 
 ## Usage
 
