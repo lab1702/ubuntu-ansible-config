@@ -6,4 +6,4 @@ My ansible configuration files for Ubuntu systems
 
     sudo apt update
     sudo apt install git ansible
-    sudo ansible-pull -U https://github.com/lab1702/ubuntu-ansible-config.git
+    sudo ansible-pull -U https://github.com/lab1702/ubuntu-ansible-config.git --extra-vars "host_user=$USER"
