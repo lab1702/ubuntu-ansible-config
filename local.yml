@@ -38,6 +38,30 @@
       groups: docker
       append: yes
 
+  - name: set desktop clock-format
+    become_user: lab
+    dconf:
+      key: "/org/gnome/desktop/interface/clock-format"
+      value: "'12h'"
+
+  - name: set desktop clock-show-seconds
+    become_user: lab
+    dconf:
+      key: "/org/gnome/desktop/interface/clock-show-seconds"
+      value: "'true'"
+
+  - name: set 12 hour clock show-date
+    become_user: lab
+    dconf:
+      key: "/org/gnome/desktop/interface/clock-show-date"
+      value: "'true'"
+
+  - name: set 12 hour clock show-weekday
+    become_user: lab
+    dconf:
+      key: "/org/gnome/desktop/interface/clock-show-weekday"
+      value: "'true'"
+
   - name: set applications dark mode
     become_user: lab
     dconf:
