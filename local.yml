@@ -8,11 +8,13 @@
     apt_repository:
       repo: deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/
       state: present
+      uodate_cache: true
 
   - name: add megasync repository
     apt_repository:
       repo: deb https://mega.nz/linux/MEGAsync/xUbuntu_20.04/ ./
       state: present
+      update_cache: true
 
   - name: install packages
     package:
