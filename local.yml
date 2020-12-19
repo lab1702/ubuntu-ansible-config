@@ -4,6 +4,10 @@
   become: true
 
   tasks:
+  - name: add megasync repo
+    apt_repository: deb https://mega.nz/linux/MEGAsync/xUbuntu_20.04/ ./
+    state: present
+
   - name: install packages
     package:
       name:
@@ -14,6 +18,7 @@
         - docker.io
         - emacs
         - vim
+        - megasync
         - steam
 
   - name: install snaps
@@ -27,9 +32,6 @@
     snap:
       name: code
       classic: yes
-
-  - name: install megasync
-    apt: deb=https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/megasync-xUbuntu_20.04_amd64.deb state=present update_cache=true
 
   - name: add user to docker group
     user:
