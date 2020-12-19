@@ -70,6 +70,12 @@
       key: "/org/gnome/desktop/screensaver/lock-enabled"
       value: "false"
 
+  - name: hide home folder on desktop
+    become_user: lab
+    dconf:
+      key: "/org/gnome/shell/extensions/desktop-icons/show-home"
+      value: "false"
+
   - name: hide trash on desktop
     become_user: lab
     dconf:
