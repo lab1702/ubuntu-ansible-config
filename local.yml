@@ -13,6 +13,11 @@
     apt_repository:
       repo: deb https://mega.nz/linux/MEGAsync/xUbuntu_20.04/ ./
       state: present
+
+  - name: update packages
+    apt:
+      name: "*"
+      state: latest
       update_cache: true
 
   - name: install packages
