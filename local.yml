@@ -9,6 +9,11 @@
       repo: deb https://mega.nz/linux/MEGAsync/xUbuntu_20.04/ ./
       state: present
 
+  - name: add R repo
+    apt_repository:
+      repo: deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/
+      state: present
+
   - name: install packages
     package:
       name:
@@ -18,9 +23,13 @@
         - build-essential
         - docker.io
         - emacs
+        - ess
         - vim
-        - megasync
+        - jupyter
         - steam
+        - megasync
+        - r-base
+        - r-base-dev
 
   - name: install snaps
     snap:
@@ -29,7 +38,7 @@
         - zoom-client
         - bashtop
 
-  - name: install snaps-classic
+  - name: install vscode
     snap:
       name: code
       classic: yes
