@@ -38,10 +38,16 @@
       groups: docker
       append: yes
 
-  - name: set desktop dark mode
+  - name: set applications dark mode
     become_user: lab
     dconf:
       key: "/org/gnome/desktop/interface/gtk-theme"
+      value: "'Yaru-dark'"
+
+  - name: set gnome shell dark mode
+    become_user: lab
+    dconf:
+      key: "/org/gnome/shell/extensions/user-theme/name"
       value: "'Yaru-dark'"
 
   - name: set desktop background primary-color
