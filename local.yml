@@ -48,19 +48,19 @@
     become_user: lab
     dconf:
       key: "/org/gnome/desktop/interface/clock-show-seconds"
-      value: "'true'"
+      value: "true"
 
   - name: set 12 hour clock show-date
     become_user: lab
     dconf:
       key: "/org/gnome/desktop/interface/clock-show-date"
-      value: "'true'"
+      value: "true"
 
   - name: set 12 hour clock show-weekday
     become_user: lab
     dconf:
       key: "/org/gnome/desktop/interface/clock-show-weekday"
-      value: "'true'"
+      value: "true"
 
   - name: set applications dark mode
     become_user: lab
