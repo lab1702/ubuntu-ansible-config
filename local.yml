@@ -38,6 +38,12 @@
       groups: docker
       append: yes
 
+  - name: set night-light-enabled
+    become_user: lab
+    dconf:
+      key: "/org/gnome/settings-daemon/plugins/color/night-light-enabled"
+      value: "true"
+
   - name: set desktop clock-format
     become_user: lab
     dconf:
