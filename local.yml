@@ -4,9 +4,11 @@
   become: true
 
   tasks:
-  - name: add megasync repo
+  - name: add apt repos
     apt_repository:
-      repo: deb https://mega.nz/linux/MEGAsync/xUbuntu_20.04/ ./
+      repo: 
+        - deb https://mega.nz/linux/MEGAsync/xUbuntu_20.04/ ./
+        - deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/
       state: present
 
   - name: install packages
