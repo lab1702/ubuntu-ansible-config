@@ -8,6 +8,8 @@
     package:
       name:
         - python3-psutil
+        - gnome-shell-extensions
+        - gnome-tweak
         - build-essential
         - docker.io
         - emacs
