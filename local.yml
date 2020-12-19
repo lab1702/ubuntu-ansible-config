@@ -54,19 +54,19 @@
     become_user: lab
     dconf:
       key: "/org/gnome/desktop/background/primary-color"
-      value: "'#000000'"
+      value: "'black'"
 
   - name: set desktop background secondary-color
     become_user: lab
     dconf:
       key: "/org/gnome/desktop/background/secondary-color"
-      value: "'#000000'"
+      value: "'black'"
 
   - name: set desktop background color-shading-type
     become_user: lab
     dconf:
       key: "/org/gnome/desktop/background/color-shading-type"
-      value: "'#000000'"
+      value: "'solid'"
 
   - name: set desktop background picture-options
     become_user: lab
