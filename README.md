@@ -2,6 +2,8 @@
 
 My ansible configuration files for Ubuntu systems.
 
+It is tested on Ubuntu 20.04 LTS and may or may not work on other distros and versions.
+
 It basically installs some packages I always want ready to go, and sets a more complete dark mode.
 
 ## Usage
