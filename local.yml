@@ -29,7 +29,6 @@
         - dconf-editor
         - build-essential
         - docker.io
-        - htop
         - emacs
         - vim
         - steam
@@ -46,6 +45,8 @@
         - discord
         - zoom-client
         - bashtop
+        - bpytop
+        - htop
 
   - name: install vscode
     snap:
