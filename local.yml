@@ -82,12 +82,6 @@
       key: "/org/gnome/shell/extensions/desktop-icons/show-trash"
       value: "false"
 
-  - name: show trash in dock
-    become_user: "{{ host_user }}"
-    dconf:
-      key: "/org/gnome/shell/extensions/dash-to-dock/show-trash"
-      value: "true"
-
   - name: set desktop clock-format
     become_user: "{{ host_user }}"
     dconf:
