@@ -148,7 +148,3 @@
     dconf:
       key: "/org/gnome/desktop/background/picture-uri"
       value: "''"
-
-  - name: enable gnome shell themes
-    become_user: "{{ host_user }}"
-    command: "gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com"
