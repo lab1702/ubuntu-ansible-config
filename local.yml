@@ -43,7 +43,7 @@
         - texlive-full
         - lyx
         - texstudio
-        - regolith-desktop-standard
+        - regolith-desktop-complete
 
   - name: install snaps
     snap:
