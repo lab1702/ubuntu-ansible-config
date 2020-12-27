@@ -55,6 +55,31 @@
         - lyx
         - texstudio
         - regolith-desktop-mobile
+        - r-base
+        - r-base-dev
+        - libopenblas-base
+        - libxml2-dev
+        - libcurl4-openssl-dev
+        - libssl-dev
+        - libx11-dev
+        - libglu1-mesa-dev
+        - libftgl-dev
+        - libfontconfig1-dev
+        - libcairo2-dev
+        - libgsl-dev
+        - libudunits2-dev
+        - libgdal-dev
+        - libmpfr-dev
+        - libgmp-dev
+        - jupyter
+        - julia
+        - elpa-ess
+        - elpa-elpy
+        - elpa-graphviz-dot-mode
+        - elpa-company
+        - elpa-htmlize
+        - elpa-csv-mode
+        - elpa-zenburn-theme
 
   - name: install snaps
     snap:
