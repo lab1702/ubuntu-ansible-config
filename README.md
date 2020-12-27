@@ -6,6 +6,8 @@ It is tested on Ubuntu 20.04 LTS and may or may not work on other distros and ve
 
 It basically installs some packages I always want ready to go, and sets a more complete dark mode.
 
+It also installs an optional desktop environment based on i3 tiling window manager called Regolith.
+
 ## Usage
 
 Make sure the host_user is set to your username.
