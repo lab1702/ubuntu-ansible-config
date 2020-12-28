@@ -26,11 +26,6 @@
       repo: "deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/"
       state: present
 
-  - name: add regolith ppa
-    apt_repository:
-      repo: ppa:regolith-linux/release
-      state: present
-
   - name: update packages
     apt:
       name: "*"
@@ -55,7 +50,6 @@
         - texlive-full
         - lyx
         - texstudio
-        - regolith-desktop-mobile
         - r-base
         - r-base-dev
         - libopenblas-base
@@ -80,7 +74,6 @@
         - elpa-company
         - elpa-htmlize
         - elpa-csv-mode
-        - elpa-zenburn-theme
 
   - name: install snaps
     snap:
