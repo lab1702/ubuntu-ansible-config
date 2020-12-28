@@ -12,6 +12,7 @@
   - name: add megasync repository
     apt_repository:
       repo: "deb https://mega.nz/linux/MEGAsync/xUbuntu_20.04/ ./"
+      filename: mega_nz_linux_MEGAsync_xUbuntu_20_04
       state: present
 
   - name: add R repository key
