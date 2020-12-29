@@ -70,6 +70,7 @@
         - libgmp-dev
         - jupyter
         - julia
+        - julia-doc
         - elpa-ess
         - elpa-elpy
         - elpa-graphviz-dot-mode
