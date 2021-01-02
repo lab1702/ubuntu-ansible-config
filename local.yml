@@ -78,6 +78,8 @@
         - elpa-company
         - elpa-htmlize
         - elpa-csv-mode
+        - elpa-markdown-mode
+        - elpa-markdown-toc
 
   - name: install snaps
     snap:
