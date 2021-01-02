@@ -72,6 +72,10 @@
         - jupyter
         - julia
         - julia-doc
+        - golang
+        - rustc
+        - rust-doc
+        - haskell-platform
         - elpa-ess
         - elpa-elpy
         - elpa-graphviz-dot-mode
