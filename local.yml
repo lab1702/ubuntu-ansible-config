@@ -80,6 +80,12 @@
         - elpa-csv-mode
         - elpa-markdown-mode
         - elpa-markdown-toc
+        - elpa-gnuplot-mode
+        - elpa-go-mode
+        - elpa-haskell-mode
+        - elpa-lua-mode
+        - elpa-rust-mode
+        - elpa-yaml-mode
 
   - name: install snaps
     snap:
