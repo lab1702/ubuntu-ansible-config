@@ -69,6 +69,7 @@
         - libgdal-dev
         - libmpfr-dev
         - libgmp-dev
+        - xutils-dev
         - jupyter
         - julia
         - julia-doc
