@@ -91,6 +91,7 @@
         - elpa-lua-mode
         - elpa-rust-mode
         - elpa-yaml-mode
+        - elpa-which-key
 
   - name: install snaps
     snap:
