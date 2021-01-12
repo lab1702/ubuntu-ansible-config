@@ -216,3 +216,9 @@
     get_url:
       url: https://raw.githubusercontent.com/lab1702/lars-dotfiles/main/dot_emacs.el
       dest: "$HOME/.emacs"
+
+  - name: download my rstudio config file
+    become_user: "{{ host_user }}"
+    get_url:
+      url: https://raw.githubusercontent.com/lab1702/datascience/main/rstudio-prefs.json
+      dest: "$HOME/.config/rstudio/rstudio-prefs.json"
