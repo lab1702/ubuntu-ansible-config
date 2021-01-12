@@ -217,6 +217,11 @@
       url: https://raw.githubusercontent.com/lab1702/lars-dotfiles/main/dot_emacs.el
       dest: "$HOME/.emacs"
 
+  - name: create rstudio config dir
+    become_user: "{{ host_user }}"
+      file: "$HOME/.config/rstudio"
+      state: directory
+
   - name: download my rstudio config file
     become_user: "{{ host_user }}"
     get_url:
