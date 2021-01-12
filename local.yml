@@ -104,7 +104,6 @@
         - elpa-yaml-mode
         - elpa-which-key
         - elpa-monokai-theme
-        - elpa-solarized-theme
         - elpa-zenburn-theme
 
   - name: install snaps
