@@ -210,3 +210,9 @@
     dconf:
       key: "/org/gnome/desktop/background/picture-uri"
       value: "''"
+
+  - name: download my emacs config file
+    become_user: "{{ host_user }}"
+    get_url:
+      url: https://raw.githubusercontent.com/lab1702/lars-dotfiles/main/dot_emacs.el
+      dest: "$HOME/.emacs"
