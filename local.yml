@@ -43,6 +43,7 @@
         - gnome-tweaks
         - dconf-editor
         - build-essential
+        - htop
         - docker.io
         - emacs
         - vim
@@ -98,9 +99,6 @@
       name:
         - discord
         - zoom-client
-        - bashtop
-        - bpytop
-        - htop
 
   - name: install vscode
     snap:
