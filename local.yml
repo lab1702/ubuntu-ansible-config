@@ -26,6 +26,11 @@
       deb: https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/megasync-xUbuntu_20.04_amd64.deb
       state: present
 
+  - name: install rstudio
+    apt:
+      deb: https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.3.1093-amd64.deb
+      state: present
+
   - name: install packages
     package:
       name:
