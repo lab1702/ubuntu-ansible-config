@@ -4,17 +4,6 @@
   become: true
 
   tasks:
-  - name: add megasync key
-    apt_key:
-      url: https://mega.nz/linux/MEGAsync/xUbuntu_20.04/Release.key
-      state: present
-
-  - name: add megasync repository
-    apt_repository:
-      repo: "deb https://mega.nz/linux/MEGAsync/xUbuntu_20.04/ ./"
-      filename: mega_nz_linux_MEGAsync_xUbuntu_20_04
-      state: present
-
   - name: add R repository key
     apt_key:
       keyserver: keyserver.ubuntu.com
@@ -48,7 +37,6 @@
         - emacs
         - vim
         - steam
-        - megasync
         - graphviz
         - graphviz-doc
         - texlive-full
