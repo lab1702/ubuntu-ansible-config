@@ -15,6 +15,16 @@
       repo: "deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/"
       state: present
 
+  - name: add docker repository key
+    apt_key:
+      url: https://download.docker.com/linux/ubuntu/gpg
+      state: present
+
+  - name: add docker repository
+    apt_repository:
+      repo: "deb https://download.docker.com/linux/ubuntu focal stable"
+      state: present
+
   - name: update packages
     apt:
       name: "*"
@@ -34,6 +44,9 @@
   - name: install packages
     package:
       name:
+        - docker-ce
+        - docker-ce-cli
+        - containerd.io
         - python3-psutil
         - python3-pip
         - python3-venv
@@ -43,7 +56,6 @@
         - dconf-editor
         - build-essential
         - htop
-        - docker.io
         - emacs
         - vim
         - steam
