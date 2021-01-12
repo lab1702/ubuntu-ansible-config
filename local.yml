@@ -24,8 +24,7 @@
   - name: install megasync
     apt:
       deb: https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/megasync-xUbuntu_20.04_amd64.deb
-      state: latest
-      update_cache: true
+      state: present
 
   - name: install packages
     package:
