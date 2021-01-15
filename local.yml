@@ -63,6 +63,7 @@
         - graphviz
         - graphviz-doc
         - texlive-full
+        - texmaker
         - lyx
         - texstudio
         - r-base
