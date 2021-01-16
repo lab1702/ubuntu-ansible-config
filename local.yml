@@ -212,21 +212,3 @@
     dconf:
       key: "/org/gnome/desktop/background/picture-uri"
       value: "''"
-
-  - name: download my emacs config file
-    become_user: "{{ host_user }}"
-    get_url:
-      url: https://raw.githubusercontent.com/lab1702/lars-dotfiles/main/dot_emacs.el
-      dest: "$HOME/.emacs"
-
-  - name: create rstudio config dir
-    become_user: "{{ host_user }}"
-    file:
-      path: "$HOME/.config/rstudio"
-      state: directory
-
-  - name: download my rstudio config file
-    become_user: "{{ host_user }}"
-    get_url:
-      url: https://raw.githubusercontent.com/lab1702/datascience/main/rstudio-prefs.json
-      dest: "$HOME/.config/rstudio/rstudio-prefs.json"
