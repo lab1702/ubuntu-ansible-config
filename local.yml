@@ -218,7 +218,6 @@
     get_url:
       url: https://raw.githubusercontent.com/lab1702/lars-dotfiles/main/dot_emacs.el
       dest: "$HOME/.emacs"
-      state: present
 
   - name: create rstudio config dir
     become_user: "{{ host_user }}"
@@ -231,4 +230,3 @@
     get_url:
       url: https://raw.githubusercontent.com/lab1702/datascience/main/rstudio-prefs.json
       dest: "$HOME/.config/rstudio/rstudio-prefs.json"
-      state: present
