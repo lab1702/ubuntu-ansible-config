@@ -92,6 +92,7 @@
         - haskell-platform
         - sbcl
         - sbcl-doc
+        - slime
         - elpa-ess
         - elpa-elpy
         - elpa-graphviz-dot-mode
