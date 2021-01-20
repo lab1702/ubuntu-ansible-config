@@ -90,6 +90,7 @@
         - rustc
         - rust-doc
         - haskell-platform
+        - gnu-smalltalk
         - sbcl
         - sbcl-doc
         - slime
