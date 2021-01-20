@@ -94,6 +94,10 @@
         - gnu-smalltalk-doc
         - gnu-smalltalk-el
         - gnu-smalltalk-browser
+        - swi-prolog
+        - gprolog
+        - gprolog-doc
+        - elpa-ediprolog
         - sbcl
         - sbcl-doc
         - slime
