@@ -91,6 +91,9 @@
         - rust-doc
         - haskell-platform
         - gnu-smalltalk
+        - gnu-smalltalk-doc
+        - gnu-smalltalk-el
+        - gnu-smalltalk-browser
         - sbcl
         - sbcl-doc
         - slime
