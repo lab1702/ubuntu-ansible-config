@@ -90,6 +90,8 @@
         - rustc
         - rust-doc
         - haskell-platform
+        - sbcl
+        - sbcl-doc
         - elpa-ess
         - elpa-elpy
         - elpa-graphviz-dot-mode
