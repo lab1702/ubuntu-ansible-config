@@ -83,6 +83,7 @@
         - libmpfr-dev
         - libgmp-dev
         - libavfilter-dev
+        - libmagick++-dev
         - xutils-dev
         - jupyter
         - julia
