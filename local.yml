@@ -82,6 +82,7 @@
         - libgdal-dev
         - libmpfr-dev
         - libgmp-dev
+        - libavfilter-dev
         - xutils-dev
         - jupyter
         - julia
