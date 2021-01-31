@@ -93,6 +93,7 @@
         - libx11-dev
         - libasound2-dev
         - libudev-dev
+        - clang
         - rustc
         - rust-doc
         - haskell-platform
