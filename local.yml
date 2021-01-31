@@ -89,6 +89,10 @@
         - julia
         - julia-doc
         - golang
+        - pkg-config
+        - libx11-dev
+        - libasound2-dev
+        - libudev-dev
         - rustc
         - rust-doc
         - haskell-platform
