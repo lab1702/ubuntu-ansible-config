@@ -84,6 +84,7 @@
         - libgmp-dev
         - libavfilter-dev
         - libmagick++-dev
+        - libpoppler-cpp-dev
         - xutils-dev
         - jupyter
         - julia
