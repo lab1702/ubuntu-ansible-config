@@ -4,6 +4,17 @@
   become: true
 
   tasks:
+  - name: add R repository key
+    apt_key:
+      keyserver: keyserver.ubuntu.com
+      id: E298A3A825C0D65DFD57CBB651716619E084DAB9
+      state: present
+
+  - name: add R repository
+    apt_repository:
+      repo: "deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/"
+      state: present
+
   - name: add docker repository key
     apt_key:
       url: https://download.docker.com/linux/ubuntu/gpg
@@ -25,20 +36,81 @@
       deb: https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/megasync-xUbuntu_20.04_amd64.deb
       state: present
 
+  - name: install rstudio
+    apt:
+      deb: https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.4.1106-amd64.deb
+      state: present
+
   - name: install packages
     package:
       name:
         - docker-ce
         - docker-ce-cli
         - containerd.io
-        - build-essential
+        - python3-psutil
+        - python3-pip
+        - python3-venv
+        - python3-doc
         - gnome-shell-extensions
         - gnome-tweaks
         - dconf-editor
+        - build-essential
         - htop
+        - emacs
+        - vim
         - steam
+        - graphviz
+        - graphviz-doc
+        - texlive-full
+        - texmaker
+        - lyx
+        - texstudio
+        - r-base
+        - r-base-dev
+        - libopenblas-base
+        - libxml2-dev
+        - libcurl4-openssl-dev
+        - libssl-dev
+        - libx11-dev
+        - libglu1-mesa-dev
+        - libftgl-dev
+        - libfontconfig1-dev
+        - libcairo2-dev
+        - libgsl-dev
+        - libudunits2-dev
+        - libgdal-dev
+        - libmpfr-dev
+        - libgmp-dev
+        - libavfilter-dev
+        - libmagick++-dev
+        - libpoppler-cpp-dev
+        - libv8-dev
+        - xutils-dev
+        - julia
+        - julia-doc
+        - golang
+        - pkg-config
+        - libx11-dev
+        - libasound2-dev
+        - libudev-dev
+        - clang
         - rustc
         - rust-doc
+        - haskell-platform
+        - elpa-ess
+        - elpa-elpy
+        - elpa-graphviz-dot-mode
+        - elpa-company
+        - elpa-htmlize
+        - elpa-csv-mode
+        - elpa-markdown-mode
+        - elpa-markdown-toc
+        - elpa-go-mode
+        - elpa-haskell-mode
+        - elpa-lua-mode
+        - elpa-rust-mode
+        - elpa-yaml-mode
+        - elpa-which-key
 
   - name: install snaps
     snap:
